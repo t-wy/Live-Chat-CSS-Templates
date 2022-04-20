@@ -1,0 +1,70 @@
+body, yt-live-chat-renderer {
+	background: transparent !important;
+	--black-border: -2px -2px 0 black,-2px -1px 0 black,-2px 0px 0 black,-2px 1px 0 black,-2px 2px 0 black,-1px -2px 0 black,-1px -1px 0 black,-1px 0px 0 black,-1px 1px 0 black,-1px 2px 0 black,0px -2px 0 black,0px -1px 0 black,0px 0px 0 black,0px 1px 0 black,0px 2px 0 black,1px -2px 0 black,1px -1px 0 black,1px 0px 0 black,1px 1px 0 black,1px 2px 0 black,2px -2px 0 black,2px -1px 0 black,2px 0px 0 black,2px 1px 0 black,2px 2px 0 black;
+}
+
+yt-live-chat-app {
+	background: #ffffff66 !important;
+	border-radius: 20px;
+	margin: 20px;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+}
+
+* {
+	font-family: "Inter","Roobert","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+yt-live-chat-viewer-engagement-message-renderer, #panel-pages, div > [role="heading"], #visible-banners, #action-panel, #item-scroller::-webkit-scrollbar, #show-more, #author-photo, #timestamp, #ticker, #menu-button, .yt-icon-button, #tooltip {
+    display: none !important;
+}
+
+yt-live-chat-paid-message-renderer #author-name, #purchase-amount {
+    color: var(--yt-live-chat-paid-message-primary-color) !important;
+}
+
+yt-live-chat-membership-item-renderer #author-name {
+    color: var(--yt-live-chat-sponsor-header-color) !important;
+}
+
+#message, #author-name, #purchase-amount, yt-live-chat-author-chip::before, #purchase-amount::before, #purchase-amount::after, #card #header::after, #header-subtext, #header-primary-text {    
+	font-size: 32px !important;
+	line-height: 30px !important;
+    text-shadow: var(--black-border);
+    font-weight: bold !important;
+}
+#message, #header-subtext, #header-primary-text, #card #header::after {
+    color: white;
+}
+yt-live-chat-membership-item-renderer #card {
+    flex-direction: row;
+}
+yt-live-chat-membership-item-renderer #header, yt-live-chat-paid-message-renderer #header, yt-live-chat-membership-item-renderer #content, yt-live-chat-paid-message-renderer #content {
+    padding: 0 !important;
+}
+#card, #card *:not(#timestamp, #author-photo, #menu-butto, yt-live-chat-author-chip, .yt-icon-button, #tooltip, #currency-img) {
+    display: inline !important;
+    background: transparent !important;
+}
+.yt-live-chat-author-badge-renderer#image > img, yt-icon > svg {
+    height: 24px;
+    width: 24px;
+}
+yt-live-chat-membership-item-renderer, yt-live-chat-text-message-renderer {
+	padding: 5px 20px;
+}
+yt-live-chat-author-chip {
+	padding: 0px;
+    display: inline-flex !important;
+    flex-direction: row-reverse;
+}
+yt-live-chat-author-chip::before, #card #header::after {
+    content: ": ";
+}
+
+#purchase-amount::before {
+    content: "(";
+}
+
+#purchase-amount::after {
+    content: ")";
+}

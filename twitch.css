@@ -1,0 +1,42 @@
+#root > div {
+	background: #ffffff66 !important;
+	border-radius: 20px;
+	margin: 20px;
+}
+body {
+	background: transparent !important;
+	--black-border: -2px -2px 0 black,-2px -1px 0 black,-2px 0px 0 black,-2px 1px 0 black,-2px 2px 0 black,-1px -2px 0 black,-1px -1px 0 black,-1px 0px 0 black,-1px 1px 0 black,-1px 2px 0 black,0px -2px 0 black,0px -1px 0 black,0px 0px 0 black,0px 1px 0 black,0px 2px 0 black,1px -2px 0 black,1px -1px 0 black,1px 0px 0 black,1px 1px 0 black,1px 2px 0 black,2px -2px 0 black,2px -1px 0 black,2px 0px 0 black,2px 1px 0 black,2px 2px 0 black;
+}
+* {
+	font-family: "Inter","Roobert","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.chat-room {
+	background: transparent !important;
+}
+.user-notice-line, .user-notice-line * {
+	padding: 0 !important;
+	margin: 0 !important;
+	background: rgba(0, 0, 0, 0) !important;
+}
+button[data-a-target="chat-badge"] img {
+	height: 24px;
+}
+.chat-line__message-highlight {
+	padding: 5px 20px;
+	background: rgba(0, 0, 0, 0) !important;
+}
+.chat-line__message, .chat-line__status {
+	background: rgba(0, 0, 0, 0) !important;
+	font-size: 32px;
+	line-height: 30px;
+    text-shadow: var(--black-border);
+    font-weight: bold;
+}
+.PGirV p, .user-notice-line * {
+	font-size: 16px !important;
+    text-shadow: var(--black-border);
+    font-weight: bold;
+}
+.chat-input, .stream-chat-header, .channel-leaderboard, .user-notice-line :first-child, .user-notice-line :first-child, .viewer-card-layer__draggable, .chat-line__reply-icon, .chat-paused-footer, .simplebar-track {
+	display: none !important;
+}
